@@ -1,15 +1,14 @@
 <div>
-  <form (submit)="addItem($event)">
+  <form (submit)="addTodoItem($event)">
     <input class="textfield" name="newTodo" [(ngModel)]="newTodo">
-    <button type="submit" [disabled]="newTodo === ''">Add</button>
+    <button type="submit">Add</button>
   </form>
 
   <ul>
     <li *ngFor="let todo of todos">
       <input type="checkbox" class="checkbox" [(ngModel)]="todo.completed" />
-      <span [ngClass]="{'checked': todo.completed}">{{ todo.item }}</span>
+      {{ todo.item }}
     </li>
   </ul>
 
-  <button (click)="deleteSelected()" [disabled]="todos.length == 0">Delete Selected</button>
 </div>

@@ -26,7 +26,6 @@ export class TodoListComponent implements OnInit {
     newItem.completed = false;
     this.todos.push(newItem);
 
-    this.newTodo = ''; // Clear the textbox
     event.preventDefault();
   }
 
