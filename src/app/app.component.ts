@@ -7,5 +7,5 @@ import { Todo } from './todo';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My TODO List';
+  title = 'Hello Angular2';
 }
